@@ -18,7 +18,7 @@ for _ in range(e) :
 dist_arr = [float("inf")] * (v+1)
 dist_arr[k] = 0
 que = []
-heapq.heappush(que, (0, k))
+heapq.heappush(que, (0, k)) #그냥 생성할 때부터 이렇게 써도 됨 que = [(0, k)]
 
 ## 풀이 : 다익스트라
 while que :
@@ -43,3 +43,9 @@ for i in range(1, v+1) :
         print("INF")
     else : 
         print(dist_arr[i])
+
+
+## 출력은 이렇게도 가능. 같은뜻
+# for i in range(1, v+1) :
+#     dist = dist_arr[i]
+#     print(dist if dist!=float("inf") else "INF")
