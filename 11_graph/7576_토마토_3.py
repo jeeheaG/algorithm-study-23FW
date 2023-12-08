@@ -22,7 +22,7 @@ for i in range(r) :
         if arr[j]==1 :
             que.append((i, j))
 
-
+# 시간초과나서 반복문 하나로 합침
 # #토마토 상자
 # board = []
 # for i in range(r) :
