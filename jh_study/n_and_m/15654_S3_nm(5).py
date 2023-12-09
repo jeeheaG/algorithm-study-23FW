@@ -7,7 +7,7 @@
 from sys import stdin
 input = stdin.readline
 
-n_len, length = map(int, input().split())
+_, length = map(int, input().split())
 n_arr = list(map(int, input().split()))
 n_arr.sort() #정렬 (오름차순 출력을 위해)
 
