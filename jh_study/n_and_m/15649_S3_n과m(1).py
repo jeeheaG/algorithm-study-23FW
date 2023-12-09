@@ -1,6 +1,6 @@
 # https://www.acmicpc.net/problem/15649
 # 모든 경우를 탐색해야 함
-# n과 m - 1
+# n과 m (1)
 # !!) list.append() 메서드는 반환값이 없음을 유의 ex) permutation(nums.append(i), cnt+1) 하면 함수에 리스트 전달 안됨
 
 from sys import stdin
