@@ -17,8 +17,7 @@ results_str = [] # 수열(result)들을 문자열로 변환하여 저장
 def permutation() :
     # 수열 하나 완성 시
     if len(result)==length :
-        result_str = ' '.join(str(i) for i in result) #리스트를 공백으로 구분된 문자열로 변환해라
-        results_str.append(result_str)
+        print(*result)
         return
     
     # 오름차순이므로 중복 체크 시 이전것과 다르다면 중복이 아님
@@ -36,9 +35,3 @@ def permutation() :
             prev = n_arr[i] #직전 사용 숫자로 기억
 
 permutation()
-
-# 중복제거 (순서 유지됨)
-# sorted_results_str = list(dict.fromkeys(results_str))
-
-## 출력
-print(*results_str, sep="\n")
