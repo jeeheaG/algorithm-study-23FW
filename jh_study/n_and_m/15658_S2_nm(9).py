@@ -33,7 +33,7 @@ def permutation() :
 permutation()
 
 # 중복제거 (순서 유지됨)
-# sorted_results_str = list(dict.fromkeys(results_str))
+sorted_results_str = list(dict.fromkeys(results_str))
 
 ## 출력
-print(*results_str, sep="\n")
+print(*sorted_results_str, sep="\n")
